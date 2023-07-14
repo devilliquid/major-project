@@ -1,0 +1,74 @@
+<!-- ! PLEASE INSERT HERE HOMEPAGE -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamaha</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <script src="https://kit.fontawesome.com/cf6daf62a4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header section starts -->
+    <div class="header">
+           <img src="../images/home/wallpaper.jpg" style="position: relative; width: 100%;">
+
+           
+        <div class="navbar" id="myHeader">
+            <!-- yamaha logo -->
+            <div class="logo"><img src="../images/home/logo.png" alt=""></div>
+            
+            <!-- navbar section starts -->
+               <div class="nav_lists">
+                  <a href="#" class="active">HOME</a>
+                  <a href="#">ABOUT</a>
+                  <a href="#">BIKES</a>
+                  <a href="#">SCOOTERS</a>
+                  <a href="#">GALLERY</a>
+                  <a href="#">CONTACTS</a>
+                </div>
+           <!-- navbar section ends -->
+
+           <!-- login section starts -->
+           <div class="login">
+              <div>
+                  <a href="#">Login</a>
+                  <a href="#">Sign Up</a>
+              </div>
+           </div>
+
+            <!-- menu bar -->
+              <div class="menubar">
+                <i class="fa fa-bars"></i>
+              </div>
+            </div>
+        <!-- searchbar starts -->
+        <div class="search-container">
+            <input type="text" placeholder="Search.." class="searchterm" name="search">
+              
+              <button type="submit" class="searchbutton">
+                <i class="fa fa-search"></i>
+              </button>
+          </div>
+          <!-- searchbar ends -->
+    </div>
+</body>
+<link rel="stylesheet" href="../javascript/script.js">
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  </script>
+</html>

@@ -1,0 +1,139 @@
+/* ! -----------------------ABOUT.HTML CSS----------------------- */
+
+body{
+    font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 900px;
+}
+
+.basic{
+    margin: 50px 0;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 2px solid black !important;
+    padding: 8px;
+    text-align: left;
+}
+  
+th {
+    background-color: #f2f2f2;
+}
+
+th:first-child,
+td:first-child {
+  background-color: #dfe8f7;
+}
+
+.info h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    color: #ed1c24;
+
+}
+
+
+.maw-logo img{
+    width: 100%;
+    height: 270px;
+    border: gray 4px solid;
+}
+
+
+
+.footer{
+    background-color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 0;
+}
+
+.footer h1{
+    color: #ed1c24;
+    font-size: 27px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.footer h4{
+    color: white;
+    font-size: 18px;
+    padding: 2px 0;
+    text-align: center;
+}
+
+.contact a{ 
+    text-decoration: none;
+    color: #dfe8f7;
+}
+
+.contact a:hover{
+    color: red;
+}
+
+.social p a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;   
+    text-align: center; 
+}
+
+.social p a:hover{
+    color: green;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.icons li{
+    float: left;
+    width: 40px;
+    height: 40px;
+    font-size: 21px;
+    border: black 1px solid;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+
+.icons i{
+    padding-top: 8px;
+    color: white;
+}
+
+.facebook{
+    background-color: #3b5998;
+}
+
+.instagram{
+    background-color: #C13584;
+}
+
+.youtube{
+    background-color: #ed1c24;
+}
+
+.twitter{
+    background-color: #2daae1;
+}
+
+.copy{
+    color: #dfe8f7;
+}
+
+.copy span a{
+    color: #ed1c24;
+    font-weight: bold;
+}

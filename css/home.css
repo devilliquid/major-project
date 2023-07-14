@@ -1,0 +1,108 @@
+/* ! -----------------------HOME.HTML CSS----------------------- */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+}
+
+.navbar{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 25px;
+    align-items: center;
+    top: 5%;
+    /* background-color: red; */
+}
+
+.nav_lists{
+    width: fit-content;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px 15px;
+   
+}
+
+.search-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 40%;
+  padding: 0px;
+}
+
+.searchterm{
+    padding: 15px;
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 7vh;
+}
+
+.searchbutton{
+    width: 50px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.searchbutton:hover{
+    transform: scale(1.1);
+}
+
+.menubar{
+    color: white;
+    font-size: 20px;
+    display: none;
+    background: transparent;
+    align-items: center;
+}
+
+.content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 5px;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+@media screen and (max-width: 1000px) {
+    .nav_lists{
+        display: none;
+    }
+
+    .login{
+        display: none;
+    }
+
+    .menubar{
+        display: block;
+        }
+
+    }
