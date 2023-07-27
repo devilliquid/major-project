@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #253e6a;
+}
+
+.container{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
+}
+
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 45px;
+    padding-bottom: 0px;
+    color: #253e6a;
+}
+
+.input-field{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+
+}
+
+.email, .password{
+    padding: 15px;
+}
+
+input{
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid #253e6a;
+}
+
+
+.loginbtn{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.loginbtn button{
+    padding: 5px 0px;
+    width: 75%;
+    border: none;
+    background-color: #253e6a;
+    color: white;
+}
+
+.loginbtn button:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+p{
+    font-size: 13px;
+}
+
+p a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #253e6a;
+}
+
+.links{
+    margin: 45px;
+    margin-top: 10px;
+}
+
+.forgot, .register, .return-home{
+    text-align: center;
+    padding: 5px;
+}
+
+p a:hover{
+    color: red;
+}

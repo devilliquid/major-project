@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #253e6a;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.3);
+}
+
+.left-div, .right-div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 300px;
+    /* background-color: red; */
+}
+
+.left-div{
+    text-align: center;
+    padding: 10px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column; justify-content: space-between;
+}
+
+.right-div{
+    padding: 35px;
+    background-color: white;
+    text-align: center;
+}
+
+.right-div input{
+    margin: 5px;
+    padding: 5px;
+    font-size: 13px;
+    border: none;
+    border-bottom: solid 2px #253e6a;
+}
+
+.signupbtn{
+    margin-top: 20px;
+}
+
+.signupbtn button{
+    padding: 5px 0px;
+    width: 75%;
+    border: none;
+    background-color: #253e6a;
+    color: white;
+}
+
+.signupbtn button:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+.return-home{
+    padding: 10px;
+}
+
+p a:hover{
+    color: red;
+}
+
+@media screen and (max-width: 650px) {
+    .left-div{
+        display: none;
+    }
+}

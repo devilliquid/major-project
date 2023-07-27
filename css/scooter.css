@@ -1,0 +1,436 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+.header{
+  position: relative;
+  width: 100%;
+}
+
+/* nav bar css starts */
+.navbar{
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 25px;
+  align-items: center;
+  top: 5%;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.nav_lists{
+  width: fit-content;
+  display: flex;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 15px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.login{
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  border: none;
+  border-radius: 15px;
+  padding: 8px 10px;
+}
+
+a{
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 5px 15px; 
+  display: inline-block;
+}
+
+.nav:hover{
+  transform: scale(1.2);
+  color: blue;
+}
+
+.dropdown-content{
+  /* display: none; */
+  position: absolute;
+  /* background-color: #f1f1f1; */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity .5s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+
+}
+
+.dropdown-content a{
+  color: white;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content{
+  opacity: 1;
+  height: auto;
+}
+
+/* search section starts*/
+.box{
+  height: 50px;
+}
+
+.container-2{
+  vertical-align: middle;
+  white-space:nowrap;
+  position:relative;
+}
+
+.container-2 input#search{
+  width: 50px;
+  height: 50px;
+  border:none;
+  font-size: 12pt;
+  float: left;
+  padding-left: 45px;
+  border-radius: 15px;
+  color: #fff;
+  background: transparent;
+  transition: width .55s ease;
+}
+
+.container-2 input#search::-webkit-input-placeholder {
+   color: #fff;
+}
+ 
+.container-2 input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+ 
+.container-2 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+ 
+.container-2 input#search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+
+.container-2 .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  color: #fff;
+}
+
+.container-2 input#search:focus, .container-2 input#search:active{
+  outline:none;
+  width: 300px;
+}
+
+.container-2:hover input#search{
+  width: 300px;
+}
+/* search section ends */
+
+
+/* toogle menu section starts */
+.menubar{
+  color: blue;
+  font-size: 20px;
+  display: none;
+  background: transparent;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toogle-menu{
+  display: none;
+  position: absolute;
+  list-style: none;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100vh;
+  background-color: black;
+  padding-top: 30px;
+  padding: 25px;
+}
+
+.closebar{
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+  float: right;
+  margin: 10px;
+  top: 5px;
+  right: 5px;
+}
+
+.closebar:hover{
+  color: red;
+  transform: scale(1.3);
+}
+
+.toogle{
+  font-size: 20px;
+  display: block;
+  padding: 10px;
+  color: white;
+}
+
+.toogle:hover{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  color: blue;
+}
+/* toogle menu section ends */
+
+/* navbar css ends */
+
+/* bikes collection section starts */
+.bikes-collection-container{
+  position: relative;
+  margin: 25px; 
+}
+
+.row-1, .row-2, .row-3{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 10px;
+  margin: 15px;
+}
+
+.bikes-collection{
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.bikes-card-1, .bikes-card-2, .bikes-card-3, .bikes-card-4{
+  position: relative;
+  width: 300px;
+  padding: 35px 0px;
+  margin: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.bikes-card-1:hover, .bikes-card-2:hover, .bikes-card-3:hover, .bikes-card-4:hover{
+  transform: scale(1.1);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.name{
+  margin-top: 25px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.price{
+  text-align: center;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.view-details{
+  text-align: center;
+  padding-top: 10px;
+}
+
+.view-detailsbtn{
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  color: black;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.view-detailsbtn:hover{
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.show-all{
+  text-align: center;
+  padding-top: 25px;
+}
+
+.show-allbtn{
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.show-allbtn:hover{
+  background-color: #3b5998;
+  color: white;
+  cursor: pointer;
+}
+/* bikes collection section ends */
+
+/* footer section css */
+.footer{
+  background-color: black;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding: 8px 0;
+}
+
+.footer h1{
+  color: #ed1c24;
+  font-size: 27px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.footer h4{
+  color: white;
+  font-size: 18px;
+  padding: 2px 0;
+  text-align: center;
+}
+
+.contact a{ 
+  text-decoration: none;
+  color: #dfe8f7;
+}
+
+.contact a:hover{
+  color: red;
+}
+
+.social p a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;   
+  text-align: center; 
+}
+
+.social p a:hover{
+  color: green;
+}
+
+.icons{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.icons li{
+  float: left;
+  width: 40px;
+  height: 40px;
+  font-size: 21px;
+  border: black 1px solid;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.icons i{
+  padding-top: 8px;
+  color: white;
+}
+
+.facebook{
+  background-color: #3b5998;
+}
+
+.instagram{
+  background-color: #C13584;
+}
+
+.youtube{
+  background-color: #ed1c24;
+}
+
+.twitter{
+  background-color: #2daae1;
+}
+
+.copy{
+  color: #dfe8f7;
+}
+
+.copy span a{
+  color: #ed1c24;
+  font-weight: bold;
+}
+/* footer section ends */
+
+@media screen and (max-width: 1200px) {
+  .nav_lists{
+      display: none;
+  }
+
+  .login{
+      display: none;
+  }
+
+  .menubar{
+      display: block;
+      }
+  }
+
+  @media screen and (max-width: 1300px){
+    .bikes-card-4{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1070px) {
+    .bikes-card-3{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 770px) {
+    .bikes-card-2{
+      display: none;
+    }
+  }
+
+  
